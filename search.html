@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>How to Filter an HTML List using Search Input using jQuery</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+$( document ).ready(function() {
+  $('#search').keyup(function(){
+   var valThis = $(this).val().toLowerCase();
+    $('.famousCities>li').each(function(){
+     var text = $(this).text().toLowerCase();
+        (text.indexOf(valThis) == 0) ? $(this).show() : $(this).hide();            
+   });
+  });
+});
+</script>
+</head>
+ 
+<body>
+<div style="margin:auto;width: 250px;">
+<input placeholder="Search Here.." id="search" type="text" />
+<br />
+ 
+<ul class="famousCities">
+    <li><a href="amazon.com">NewYork</a></li>
+    <li><a href="#2">Amsterdam</a></li>
+    <li><a href="#3">Karachi</a></li>
+    <li><a href="#4">Ankara</a></li>
+    <li><a href="#5">Baltimore</a></li>
+    <li><a href="#6">Beijing</a></li>
+    <li><a href="#7">Berlin</a></li>
+    <li><a href="#8">Brussels</a></li>
+    <li><a href="#9">London</a></li>
+    <li><a href="#10">Cairo</a></li>
+</ul>
+</div>
+</body>
+</html>
