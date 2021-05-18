@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>seARch!</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+$( document ).ready(function() {
+  $('#search').keyup(function(){
+   var valThis = $(this).val().toLowerCase();
+    $('.famousCities>li').each(function(){
+     var text = $(this).text().toLowerCase();
+        (text.indexOf(valThis) == 0) ? $(this).show() : $(this).hide();            
+   });
+  });
+});
+</script>
+</head>
+ 
+<body>
+<center>
+<img src="mainlogo.png" width="340 height="80"><br>
+<table border="0" cellspacing="0" cellpadding="5" width="70%">
+<tbody><tr><td bgcolor="#EEEEEE">
+</center>
+<center>
+seARch the web using seARch!<br>
+<div>
+  <button type="button" onclick=window.open("https://www.geoguessr.com/")>Cool!</button>
+  <button type="button" onclick=window.open("https://uk.camelcamelcamel.com/")>Underrated!</button>
+  <button type="button" onclick=window.open("https://www.bbc.co.uk/news")>News</button>
+  <button type="button" onclick=window.open("https://squirrelcom.github.io/seARch/about.html")>More!</button>
+  
+ 
+</div>
+
+<div style="margin:auto;width: 250px;">
+<input placeholder="seARch!... "id="search" type="text" />
+<button type="submit">seARch! it</button>
+<br />
+ 
+<ul class="famousCities">
+    <li><a href="https://www.amazon.co.uk/">Amazon</a></li>
+    <li><a href="https://www.youtube.com">Youtube</a></li>
+    <li><a href="https://www.microsoft.com">Microsoft</a></li>
+    <li><a href="https://www.blogger.com">Blogger</a></li>
+    <li><a href="https://www.apple.com">Apple</a></li>
+    <li><a href="https://www.wordpress.org">wordpress</a></li>
+    <li><a href="https://www.mozilla.org">Mozilla</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a></li>
+    <li><a href="https://www.linkedin.com">LinkedIn</a></li>
+    <li><a href="https://docs.google.com">Google Docs</a></li>
+    <li><a href="https://plus.google.com">Google plus</a></li>
+    <li><a href="https://www.europa.eu">Europa</a></li>
+    <li><a href="https://www.vimeo">Vimeo</a></li>
+    <li><a href="https://www.adobe.com">Adobe</a></li>
+    <li><a href="https://www.bbc.co.uk">BBC</a></li>
+    <li><a href="https://www.cnn.com">CNN</a></li>
+    <li><a href="https://bp.blogspot.com">Blogspot</a></li>
+    <li><a href="https://www.facebook.com">Facebook</a></li>
+    <li><a href="https://www.vk.com">VK</a></li>
+    <li><a href="https://www.line.me">Line</a></li>
+    <li><a href="https://www.github.com">Github</a></li>
+    <li><a href="https://www.wikimedia.org">wikimedia</a></li>
+    <li><a href="https://www.forbes.com">Forbes</a></li>
+    <li><a href="https://www.yahoo.com">Yahoo</a></li>
+    <li><a href="https://www."></a></li>
+    <li><a href="https://www."></a></li>
+    <li><a href="https://www."></a></li>
+    <li><a href="https://www."></a></li>
+</ul>
+</div>
+<center><font size="-1">Copyright ©2021 squ:rre/ industries and seARch!</font></center>
+</center>
+</body>
+</html>
