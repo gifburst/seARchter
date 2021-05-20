@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>seARch!</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+$( document ).ready(function() {
+  $('#search').keyup(function(){
+   var valThis = $(this).val().toLowerCase();
+    $('.famousCities>li').each(function(){
+     var text = $(this).text().toLowerCase();
+        (text.indexOf(valThis) == 0) ? $(this).show() : $(this).hide();            
+   });
+  });
+});
+</script>
+</head>
+ 
+<body>
+<div>
+  <img src="mainlogo.png" alt="seARch!" width="340 height="80"><br>
+  <button type="button" onclick=window.open("https://squirrelcom.github.io/seARch/addurl.html")>Github page</button>
+  <button type="button" onclick=window.open("https://squirrelcom.github.io/seARch/pages.html")>FAQ</button>
+  <button type="button" onclick=window.open("https://squirrelcom.github.io/seARch/bugs.html")>Bugs</button>
+  <button type="button" onclick=window.open("https://squirrelcom.github.io/seARch/seARch.html")>to the seARch! engine</button>
+  <button type="button" onclick=window.open("https://squirrelcom.github.io/seARch/news.html")>News and information</button>
+  <button type="button" onclick=window.open("https://squirrelcom.github.io/seARch/about.html")>More!</button>
+  
+ 
+</div>
+
+<center><font size="-1">Copyright ©2021 squ:rre/ industries and seARch!</font></center>
+</body>
+</html>
